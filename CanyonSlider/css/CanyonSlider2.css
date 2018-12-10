@@ -1,0 +1,55 @@
+/* CanyonSlider2 */
+#copy {
+  font-family:cursive;
+  font-size:1rem;
+}
+body {
+  background:rgba(137,139,164,1.00);
+}
+#CanyonSlider2, #CanyonSlider2 .CanyonSlider2Inner {
+    width:700px;height:306px;
+    border-radius:0px;
+}
+#CanyonSlider2 {
+    background-color:black;
+    position:relative;
+    margin:0 auto; 
+    transform: translate3d(0,0,0);
+}
+
+#CanyonSlider2 .mc-caption a { 
+    color:#34739c;
+}
+
+#CanyonSlider2 .navBulletsWrapper  {
+    display:none;
+}
+
+#CanyonSlider2 img, #CanyonSlider2>b, #CanyonSlider2 a>b {
+    position:absolute; border:none; display:none;
+}
+
+#CanyonSlider2 .CanyonSlider2Inner {
+    overflow:hidden;
+    position:absolute; top:0; left:0;
+}
+
+
+#Slider2_smalls 
+{
+    margin-top:50px;
+    text-align:center;
+    font-size:0;
+}
+#Slider2_smalls .Slider2_small 
+{
+    display:inline-block;
+    *display:inline;zoom:1;
+    margin:0 1px;
+    border:1px solid #888;
+    padding:4px;
+    background:black;
+}
+#Slider2_smalls .Slider2_small img{ border:1px  #555; cursor:pointer; width:70px; height:31px; opacity:0.5;filter:alpha(opacity=50);}
+#Slider2_smalls .Slider2_small-on img{border:1px solid #999; opacity:1;filter:alpha(opacity=100);}
+

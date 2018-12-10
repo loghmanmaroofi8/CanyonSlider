@@ -1,0 +1,42 @@
+/*CanyonSlider */
+body {
+  background:rgba(137,139,164,1.00);
+}
+
+#CanyonSlider, #CanyonSlider .CanyonSliderInner {
+    width:700px;height:306px;/* Must be the same size as the slider images */
+    border-radius:3px;
+}
+#CanyonSlider {
+    background-color:white;
+    position:relative;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
+}
+/* ------ built-in navigation bullets wrapper ------*/
+#CanyonSlider .navBulletsWrapper  {
+    top:320px;
+    text-align:center;
+    background:none;
+    position:relative;
+    z-index:3;
+}
+
+/* each bullet */
+#CanyonSlider .navBulletsWrapper div 
+{
+    width:11px; height:11px;
+    font-size:0;color:White;/*hide the index number in the bullet element*/
+    background:transparent url(../img/bullet.png) no-repeat 0 0;
+    display:inline-block; *display:inline; zoom:1;
+    overflow:hidden;cursor:pointer;
+    margin:0 6px;/* set distance between each bullet*/
+}
+
+#CanyonSlider .navBulletsWrapper .active {background-position:0 -11px;}
+
+#CanyonSlider .CanyonSliderInner {
+    overflow:hidden;
+    position:absolute; top:0; left:0;
+}
